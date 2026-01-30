@@ -13,7 +13,7 @@
     <a href="https://github.com/HavishyaVally/Frontend-Mentors/tree/main/5_Newbie/product-preview-card-component-main">GitHub Repo</a>
   </h3>
 
-  <p>A beautiful product preview card component challenge from <a href="https://www.frontendmentor.io">Frontend Mentor</a>.</p>
+  <p>A product preview card component challenge from <a href="https://www.frontendmentor.io">Frontend Mentor</a>.</p>
 
   <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
@@ -66,11 +66,10 @@ I have created a dedicated, styled documentation page that goes deeper into my t
 
 ### 👤 Author
 
+- LinkedIn - [@HavishyaVally](https://www.linkedin.com/in/havishyavally/)
 - Frontend Mentor - [@HavishyaVally](https://www.frontendmentor.io/profile/HavishyaVally)
 - GitHub - [HavishyaVally](https://github.com/HavishyaVally)
 
+
 ---
 
-<div align="center">
-  <sub>Built with ❤️ by Havishya Vally</sub>
-</div>
