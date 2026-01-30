@@ -10,7 +10,7 @@
   <h3>
     <a href="https://productprvcard.netlify.app/">Live Demo</a> 
     <span> | </span>
-    <a href="https://github.com/HavishyaVally/Frontend-Mentors/tree/main/5_Newbie/product-preview-card-component-main">GitHub Repo</a>
+    <a href="https://github.com/HavishyaVally">Github</a>
   </h3>
 
   <p>A product preview card component challenge from <a href="https://www.frontendmentor.io">Frontend Mentor</a>.</p>
