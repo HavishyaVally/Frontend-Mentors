@@ -61,7 +61,7 @@ I also refined my **Flexbox** skills by using `flex-wrap: wrap` to handle the re
 I have created a comprehensive technical breakdown that goes deeper into my CSS architecture, grid/flex strategies, and specific implementation details.
 
 <div align="center">
-  <a href="document.html">
+  <a href="https://statsprvcomp.vercel.app/document.html">
     <img src="https://img.shields.io/badge/View_Detailed_Documentation-4B0082?style=for-the-badge&logo=googledocs&logoColor=white" alt="Documentation">
   </a>
 </div>
