@@ -8,12 +8,12 @@
   </div>
 
   <h3>
-    <a href="https://havishyavally.github.io/stats-preview-card-component/">Live Demo</a> 
+    <a href="https://statsprvcomp.vercel.app/index.html">Live Demo</a> 
     <span> | </span>
-    <a href="https://github.com/HavishyaVally/Frontend-Mentors/tree/main/5_Newbie/stats-preview-card-component-main">Github</a>
+    <a href="https://github.com/HavishyaVally">Github</a>
   </h3>
 
-  <p>A stats preview card component challenge from <a href="https://www.frontendmentor.io">Frontend Mentor</a>.</p>
+  <p>A stats preview card component challenge from <a href="https://www.frontendmentor.io/solutions/stats-preview-component---grid-and-flexbox-PVaohOlIHM">Frontend Mentor</a>.</p>
 
   <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
