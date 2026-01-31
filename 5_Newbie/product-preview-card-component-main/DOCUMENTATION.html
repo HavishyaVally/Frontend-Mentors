@@ -138,6 +138,27 @@
             font-size: 0.8rem;
             color: var(--grey);
         }
+        .color-palette {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .color-swatch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .swatch {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
@@ -167,6 +188,28 @@
         <section>
             <h2>Color Palette & Typography</h2>
             <p>I mapped out the colors into CSS variables for efficiency:</p>
+            <div class="color-palette">
+                <div class="color-swatch">
+                    <div class="swatch" style="background-color: var(--green-500);"></div>
+                    <code>Green 500</code>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch" style="background-color: var(--green-700);"></div>
+                    <code>Green 700</code>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch" style="background-color: var(--black);"></div>
+                    <code>Black</code>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch" style="background-color: var(--grey);"></div>
+                    <code>Grey</code>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch" style="background-color: var(--cream);"></div>
+                    <code>Cream</code>
+                </div>
+            </div>
             <ul>
                 <li><strong>Primary:</strong> Green 500 (<code>hsl(158, 36%, 37%)</code>) and Green 700 for interaction.</li>
                 <li><strong>Neutral:</strong> Cream for the background, Black for headings, and Grey for body text.</li>
