@@ -2,17 +2,17 @@
 
 <div align="center">
   <div style="display: flex; justify-content: center; align-items: flex-end; gap: 20px; margin-bottom: 20px;">
-    <img src="design/desktop-design.jpg" alt="Desktop Preview" width="60%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-    <img src="design/mobile-design.jpg" alt="Mobile Preview" width="20%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+    <img src="design/medium.png" alt="Desktop Preview" width="60%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+    <img src="design/mob.png" alt="Mobile Preview" width="20%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
   </div>
   <!-- Replace with your actual image paths. I've assumed standard naming convention -->
 </div>
 
 <div align="center">
   <h3>
-    <a href="https://your-live-site-url.com">Live Demo</a>
+    <a href="https://recipe-page-ashen-chi.vercel.app/">Live Demo</a>
     <span> | </span>
-    <a href="https://github.com/HavishyaVally/your-repo-name">Github</a>
+    <a href="https://github.com/HavishyaVally/Frontend-Mentors/tree/main/5_Newbie/recipe-page-main">Github</a>
   </h3>
 </div>
 
