@@ -68,7 +68,7 @@ button {
 I have created a dedicated, styled documentation page that goes deeper into my layout strategy, color palette implementation, and specific code choices.
 
 <div align="center">
-  <a href="./documentation.html">
+  <a href="">
     <img src="https://img.shields.io/badge/View_Detailed_Documentation-4B0082?style=for-the-badge&logo=googledocs&logoColor=white" alt="Documentation">
   </a>
 </div>
