@@ -1,0 +1,157 @@
+:root {
+    /* Layout */
+    --mobile-width: 375px;
+    --desktop-width: 700px;
+
+    /* Primary Colors */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* Neutral Colors */
+    --grey-500: hsl(234, 12%, 34%);
+    --grey-400: hsl(212, 6%, 44%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Typography */
+    --ff-base: 'Poppins', sans-serif;
+    --fs-body: 1rem;
+
+    /* Font Weights */
+    --fw-light: 200;
+    --fw-regular: 400;
+    --fw-semibold: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-base);
+}
+h1 {
+    font-size: 1.8rem;
+    font-weight: var(--fw-light);
+    color: var(--grey-400);
+
+}
+h1 span {
+    color: var(--grey-500);
+    font-weight: var(--fw-semibold);
+}
+h2 {
+    font-weight: var(--fw-semibold);
+    color: var(--grey-500);
+    font-size: 1.3rem;
+}
+p {
+    color: var(--grey-500);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-body);
+}
+body {
+    min-height: 100vh;
+    padding: 2em 1.5em;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 2.5em;
+}
+.four-card-header {
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.four-cards-container {
+    display: grid;
+    gap: 2em;
+    height: 100%;
+    width: 100%;
+    place-content: center;
+    align-items: center;
+    @media (min-width: 800px) {
+
+        grid-template-areas: ". card-2 ."
+                             "card-1 card-2 card-4"
+                             "card-1 card-3 card-4 "
+                             ". card-3 .";
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        grid-template-columns: repeat(3,350px);
+
+    }
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: .45em;
+    padding: 1.5em;
+    border-radius: 10px;
+    width: 100%;
+
+
+}
+.card div {
+    text-align: right;
+    width: 100%;
+    margin: 1em 0
+}
+.card-1 {
+    box-shadow:
+            0 -5px 0 var(--cyan),
+            0 3px 6px rgba(0,0,0,0.08),
+            0 6px 12px hsla(212, 86%, 64%, 0.15);
+    @media (min-width: 800px) {
+    grid-area: card-1;
+    }
+
+}
+.card-2 {
+    box-shadow:
+            0 -5px 0 var(--red),
+            0 3px 6px rgba(0,0,0,0.08),
+            0 6px 12px hsla(212, 86%, 64%, 0.15);
+    @media (min-width: 800px) {
+        grid-area: card-2;
+    }
+}
+.card-3 {
+
+    box-shadow:
+            0 -5px 0 var(--orange),
+            0 3px 6px rgba(0,0,0,0.08),
+            0 6px 12px hsla(212, 86%, 64%, 0.15);
+    @media (min-width: 800px) {
+        grid-area: card-3;
+    }
+}
+.card-4 {
+
+    box-shadow:
+            0 -5px 0 var(--blue),
+            0 3px 6px rgba(0,0,0,0.08),
+            0 6px 12px hsla(212, 86%, 64%, 0.15);
+    @media (min-width: 800px) {
+        grid-area: card-4;
+    }
+}
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--grey-400);
+    margin-top: 1em 0;
+}
+footer a {
+    text-decoration: none;
+    color: var(--grey-500);
+    font-weight: var(--fw-semibold);
+    cursor: pointer;
+
+}
