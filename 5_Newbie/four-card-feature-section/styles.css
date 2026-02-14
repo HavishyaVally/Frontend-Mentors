@@ -31,7 +31,7 @@
     font-family: var(--ff-base);
 }
 h1 {
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
     font-weight: var(--fw-light);
     color: var(--grey-400);
 
@@ -43,12 +43,12 @@ h1 span {
 h2 {
     font-weight: var(--fw-semibold);
     color: var(--grey-500);
-    font-size: 1.3rem;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
 }
 p {
     color: var(--grey-500);
     font-weight: var(--fw-regular);
-    font-size: var(--fs-body);
+    font-size: clamp(.9rem, 2vw, 1.05rem);
 }
 body {
     min-height: 100vh;
@@ -66,25 +66,24 @@ body {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-
     text-align: center;
 }
 
 .four-cards-container {
     display: grid;
-    gap: 2em;
+    gap: 1.5em;
     height: 100%;
     width: 100%;
     place-content: center;
     align-items: center;
-    @media (min-width: 800px) {
+    @media (min-width: 760px) {
 
         grid-template-areas: ". card-2 ."
                              "card-1 card-2 card-4"
                              "card-1 card-3 card-4 "
                              ". card-3 .";
         grid-template-rows: 1fr 1fr 1fr 1fr ;
-        grid-template-columns: repeat(3,350px);
+        grid-template-columns: repeat(3,minmax(300px,1fr));
 
     }
 }
@@ -95,7 +94,10 @@ body {
     padding: 1.5em;
     border-radius: 10px;
     width: 100%;
-
+    border-width: 5px 0 0 0;
+    border-style: solid;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08),
+    0 6px 12px hsla(212, 86%, 64%, 0.15);
 
 }
 .card div {
@@ -103,42 +105,31 @@ body {
     width: 100%;
     margin: 1em 0
 }
+.card div img {
+    width: clamp(3em, 4vw, 1.5em);
+}
 .card-1 {
-    box-shadow:
-            0 -5px 0 var(--cyan),
-            0 3px 6px rgba(0,0,0,0.08),
-            0 6px 12px hsla(212, 86%, 64%, 0.15);
-    @media (min-width: 800px) {
+    border-top-color: var(--cyan);
+    @media (min-width: 760px) {
     grid-area: card-1;
     }
 
 }
 .card-2 {
-    box-shadow:
-            0 -5px 0 var(--red),
-            0 3px 6px rgba(0,0,0,0.08),
-            0 6px 12px hsla(212, 86%, 64%, 0.15);
-    @media (min-width: 800px) {
+    border-top-color: var(--red);
+    @media (min-width: 760px) {
         grid-area: card-2;
     }
 }
 .card-3 {
-
-    box-shadow:
-            0 -5px 0 var(--orange),
-            0 3px 6px rgba(0,0,0,0.08),
-            0 6px 12px hsla(212, 86%, 64%, 0.15);
-    @media (min-width: 800px) {
+    border-top-color: var(--orange);
+    @media (min-width: 760px) {
         grid-area: card-3;
     }
 }
 .card-4 {
-
-    box-shadow:
-            0 -5px 0 var(--blue),
-            0 3px 6px rgba(0,0,0,0.08),
-            0 6px 12px hsla(212, 86%, 64%, 0.15);
-    @media (min-width: 800px) {
+    border-top-color: var(--blue);
+    @media (min-width: 760px) {
         grid-area: card-4;
     }
 }
@@ -146,7 +137,7 @@ footer {
     text-align: center;
     font-size: 12px;
     color: var(--grey-400);
-    margin-top: 1em 0;
+    margin: 1em 0;
 }
 footer a {
     text-decoration: none;
