@@ -35,7 +35,6 @@ This is my solution to the [Interactive rating component challenge on Frontend M
 * **Modern CSS:** Built a scalable design system utilizing CSS Custom Properties (`:root` variables) for all colors and typography.
 
 ## 💡 Key Learnings
-## 💡 Key Learnings
 
 ### 1. State-Driven Class Toggling
 Instead of manipulating `element.style` directly in JavaScript (which splits the design logic between two files), I learned to manage states purely by toggling classes. This **Separation of Concerns** leaves the visual presentation entirely to CSS.
