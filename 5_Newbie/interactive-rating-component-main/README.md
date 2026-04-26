@@ -1,107 +1,70 @@
-# Frontend Mentor - Interactive rating component
+# </> Frontend Mentor - Interactive Rating Component
 
-![Design preview for the Interactive rating component coding challenge](./preview.jpg)
+<div align="center">
+  <img src="./design/desktop-preview.jpg" alt="Desktop design preview" width="500" style="margin-right: 10px;">
+  <img src="./design/mobile-design.jpg" alt="Mobile design preview" width="235">
+</div>
 
-## Welcome! 👋
+<div align="center">
+  <h3>
+    <a href="YOUR_LIVE_SITE_URL_HERE">Live Demo</a> | 
+    <a href="YOUR_GITHUB_REPO_URL_HERE">Github</a>
+  </h3>
+  <p>An interactive rating component challenge from <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI">Frontend Mentor</a>.</p>
+</div>
 
-Thanks for checking out this front-end coding challenge.
+<div align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Grid-333333?style=for-the-badge&logo=css3&logoColor=white" alt="Grid" />
+  <img src="https://img.shields.io/badge/Mobile--First-430098?style=for-the-badge&logo=mobile&logoColor=white" alt="Mobile First" />
+</div>
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+---
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+## 📝 Project Overview
 
-## The challenge
+This is my solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). This challenge was a great exercise in managing UI state with Vanilla JavaScript, capturing user inputs, and implementing modern CSS layout techniques for a pixel-perfect design.
 
-Your challenge is to build out this interactive rating component and get it looking as close to the design as possible.
+## 🚀 Features
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+* **State Management:** Seamlessly transitions from the rating card to the "Thank You" state upon submission without page reloads.
+* **Interactive Elements:** Custom hover, focus, and active states for the rating selection, plus logic to keep the submit button disabled until a choice is made.
+* **Optimal Layout:** Responsive design centered perfectly across all screen sizes using CSS Grid.
+* **Modern CSS:** Built a scalable design system utilizing CSS Custom Properties (`:root` variables) for all colors and typography.
 
-Your users should be able to:
+## 💡 Key Learnings
+## 💡 Key Learnings
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Select and submit a number rating
-- See the "Thank you" card state after submitting a rating
+### 1. State-Driven Class Toggling
+Instead of manipulating `element.style` directly in JavaScript (which splits the design logic between two files), I learned to manage states purely by toggling classes. This **Separation of Concerns** leaves the visual presentation entirely to CSS.
 
-### Want some support on the challenge? 
+```javascript
+// Clean state management using class toggling instead of inline styles
+submit_btn.addEventListener("click", () => {
+    rating_container_el.classList.add("hide")
+    success_msg_el.classList.remove("hide")
+})
+```
 
-[Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### 2. Accessibility (A11y) & Semantic HTML
+Through this challenge, I realized that using `<li>` for interactive elements like ratings creates a barrier for keyboard and screen-reader users. Moving forward, I am implementing **Form-First logic**:
+* Using `<input type="radio">` for single-choice selections.
+* Wrapping inputs in a `<fieldset>` with a `<legend>` for context.
+* This ensures the component is fully navigable via keyboard and understandable by assistive technology.
 
-## Where to find everything
+### 3. Scalable CSS Units (The rem/em Strategy)
+I've refined my strategy for CSS units to ensure the layout is robust and responsive:
+* **`rem` for Typography & Layout:** Ensures the whole component scales if the user changes their browser's default font size.
+* **`em` for Local Spacing:** Used for padding inside buttons so the spacing remains proportional to the text size.
+* **`px` for "Static" Borders:** Used for 1px lines or subtle shadows where a fixed physical size is preferred.
+* **`dvh` for Layout:** Used `min-height: 100dvh` for the body wrapper to prevent the "mobile address bar" bug common with `vh`.
+* **`%` for Widths:** Used `width: 100%` instead of `vw` to avoid horizontal scrollbar issues caused by browser scrollbars.
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+## 👤 Author
 
-If you would like the Figma design file to gain experience using professional tools and build more accurate projects faster, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
-
-You will find all the required assets in the `/images` folder. The assets are already optimized.
-
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
-
-## Using AI coding assistants
-
-We've included two files to help you if you're using AI coding assistants (like Claude, GitHub Copilot, Cursor, etc.) while working on this challenge:
-
-- `AGENTS.md` - Contains detailed instructions for AI assistants on how to help you with this challenge. It's tailored to this challenge's difficulty level, so the AI will provide guidance appropriate to your learning stage—offering more support for beginner challenges and encouraging more independence on advanced ones.
-- `CLAUDE.md` - A pointer file that directs Claude-based tools to the AGENTS.md instructions.
-
-**How to use them:** You don't need to do anything! These files are automatically detected by most AI coding tools. The AI will read them and adjust its behavior to be a better learning partner—guiding you toward solutions rather than just giving you the answers.
-
-**Note:** These files are designed to help you *learn*, not to do the work for you. The AI is instructed to ask questions, give hints, and explain concepts rather than writing complete solutions.
-
-## Building your project
-
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
-
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
-
-## Deploying your project
-
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
-
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://www.frontendmentor.io/guides/hosting-your-solution).
-
-## Create a custom `README.md`
-
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://www.frontendmentor.io/guides/how-to-submit-solutions) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Share on [X (formerly Twitter)](https://x.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in your post. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on [LinkedIn](https://www.linkedin.com/company/frontend-mentor/).
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+* LinkedIn - [@HavishyaVally](YOUR_LINKEDIN_URL)
+* Frontend Mentor - [@HavishyaVally](https://www.frontendmentor.io/profile/HavishyaVally)
+* GitHub - [HavishyaVally](https://github.com/HavishyaVally)
