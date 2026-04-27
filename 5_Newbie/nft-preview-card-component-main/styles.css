@@ -1,0 +1,169 @@
+:root {
+  /* Primary Colors */
+  --blue-500: hsl(215, 51%, 70%);
+  --cyan-400: hsl(178, 100%, 50%);
+
+  /* Neutral Colors */
+  --blue-950: hsl(217, 54%, 11%);
+  --blue-900: hsl(216, 50%, 16%);
+  --blue-800: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --font-family: 'Outfit', sans-serif;
+  --font-size-body: 18px;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    line-height: 1.5;
+}
+h1 {
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--white);
+}
+p {
+    font-size: .85rem;
+    font-weight: var(--font-weight-light);
+    color: var(--blue-500);
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body {
+    background-color: var(--blue-950);
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    padding: 1.5rem;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: var(--blue-900);
+    padding: 1.5em;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px var(--blue-950);
+
+}
+.card img {
+    border-radius: 5px;
+}
+.card-image {
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative; /* for absolute positioning of .card-image-overlay */
+    display: block; /* it ensures the position context for the overlay */
+}
+.card-image img {
+    display: block;
+    width: 100%;
+    height: auto; /* Or use 100% if you want to cover the container */
+    border-radius: inherit; /* if you have rounded corners on .card-image */
+}
+
+.card-image-overlay {
+    border-radius: 5px;
+    position: absolute; /* overlay is positioned absolutely within .card-image */
+
+    inset: 0; /* overlay covers all sides of .card-image */
+    background:
+            linear-gradient(rgba(0,255,247,0.5), rgba(0,255,247,0.5)),
+            url('images/icon-view.svg') center no-repeat; /* overlay with a gradient and a view icon */
+    background-blend-mode: multiply; /* blend the overlay with the image */
+    opacity: 0; /* initially overlay is hidden */
+    transition: opacity 0.3s;
+    pointer-events: none; /* overlay doesn't block mouse events */
+}
+
+.card-image:hover .card-image-overlay {
+    opacity: 1; /* show overlay on hover */
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.card-content h1 {
+    cursor: pointer;
+}
+.card-content h1:hover {
+    color: var(--cyan-400);
+    transition: color 0.3s;
+
+}
+.card-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-stats div {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+.card-price p {
+    color: var(--cyan-400);
+    font-weight: var(--font-weight-semibold);
+}
+.card-stats div img {
+    width: 15px;
+}
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--blue-800);
+
+}
+.card-author {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+.card-author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--white);
+}
+.card-author span {
+    cursor: pointer;
+    color: var(--white);
+    font-weight: var(--font-weight-light);
+}
+.card-author span:hover {
+    color: var(--cyan-400);
+    transition: color 0.3s;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: var(--white);
+    font-size: .5rem;
+}
+footer a {
+    font-weight: var(--font-weight-semibold);
+    opacity: .7;
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+}
+footer a:hover {
+    opacity: 1;
+
+}
