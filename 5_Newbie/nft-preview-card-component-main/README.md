@@ -86,13 +86,6 @@ opacity: 1;
 
 ---
 
-## 🎯 What I Would Improve Next
-
-- Add keyboard navigability and ARIA roles for even better accessibility.
-- Explore more advanced BEM naming for even greater scalability.
-- Create a "dark/light" theme switcher using the custom properties.
-
----
 
 ## 👤 Author
 
