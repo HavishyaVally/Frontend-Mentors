@@ -25,16 +25,18 @@
     text-wrap: pretty;
 
 }
+
 body {
     font-family: var(--font-family);
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-regular);
     background-color: var(--purple-100);
-    display: grid;
-    grid-template-rows: 1fr auto;
-    grid-template-columns: 1fr;
-    place-items: center;
-
+    min-height: 100dvh;
+}
+.bg-decorator img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 footer {
     display: flex;
@@ -44,23 +46,7 @@ footer {
     margin-top: 1em;
 
 }
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-.bg-decorator {
-    width: 100%;
-}
-.bg-decorator img {
 
-    @media (min-width: 1000px) {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
 .faq-section {
     display: flex;
     width: 100%;
@@ -69,7 +55,7 @@ main {
 }
 .faq-container {
     gap: 1em;
-    margin-top: -10em;
+    margin-top: -10dvh;
     align-self: center;
     display: flex;
     flex-direction: column;
