@@ -2,8 +2,15 @@
 
 # &lt;/&gt; Frontend Mentor - FAQ Accordion
 
-<img src="design/desk.png" alt="FAQ Accordion Preview" />
+<div align="center">
 
+  <div style="display: flex; justify-content: center; align-items: flex-end; gap: 20px; margin-bottom: 20px;">
+    <!-- Replace with your specific image paths, usually located in /design folder -->
+    <img src="design/desk.png" alt="FAQ Accordion Preview"  width="60%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+
+[//]: # (    <img src="./design/mobile-design.jpg" alt="Mobile Preview" width="20%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba&#40;0,0,0,0.2&#41;;">)
+  
+</div>
 
 <h3>
   <a href="https://faq-accord-xi.vercel.app">Live Demo</a> 
