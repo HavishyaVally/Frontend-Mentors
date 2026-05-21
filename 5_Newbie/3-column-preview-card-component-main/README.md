@@ -11,9 +11,9 @@
 </div>
 
   <h3>
-    <a href="YOUR_LIVE_SITE_URL_HERE">Live Demo</a> 
+    <a href="https://3-col-preview-card-mu.vercel.app">Live Demo</a> 
     <span> | </span>
-    <a href="YOUR_REPO_URL_HERE">Github</a>
+    <a href="YOUR_REPO_URL_HERE">Portfolio</a>
   </h3>
 
   <p>A multi-column card component challenge from <a href="https://www.frontendmentor.io/challenges/3column-preview-card-component-pHl6ZycS">Frontend Mentor</a>.</p>
