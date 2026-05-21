@@ -8,7 +8,7 @@
   </div>
   <br>
 
-### [Live Demo](YOUR_LIVE_SITE_URL_HERE) | [Portfolio](YOUR_REPO_URL_HERE)
+### [Live Demo](https://fm-newbie-blog-preview-card.vercel.app) | [Portfolio](YOUR_REPO_URL_HERE)
 
   <p>A blog preview card component challenge from <a href="https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS">Frontend Mentor</a>.</p>
 
