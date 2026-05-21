@@ -2,7 +2,8 @@
 
 # &lt;/&gt; Frontend Mentor - FAQ Accordion
 
-<img src="./preview.png" alt="FAQ Accordion Preview" />
+<img src="design/desk.png" alt="FAQ Accordion Preview" />
+<img src="design/desk.png" alt="FAQ Accordion Preview" />
 
 <h3>
   <a href="https://faq-accord-xi.vercel.app">Live Demo</a> 
