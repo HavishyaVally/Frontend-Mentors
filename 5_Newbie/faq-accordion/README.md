@@ -5,11 +5,11 @@
 <img src="./preview.png" alt="FAQ Accordion Preview" />
 
 <h3>
-  <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+  <a href="https://faq-accord-xi.vercel.app">Live Demo</a> 
 </h3>
 
 <p>
-  A FAQ accordion project from <a href="https://www.frontendmentor.io">Frontend Mentor</a>.
+  A FAQ accordion project from <a href="https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz">Frontend Mentor</a>.
 </p>
 
 <p>
