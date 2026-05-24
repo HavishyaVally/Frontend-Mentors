@@ -10,12 +10,12 @@
 
 [//]: # (    <img src="./design/mobile-design.jpg" alt="Mobile Preview" width="20%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba&#40;0,0,0,0.2&#41;;">)
   
-</div>
+
 
 <h3>
   <a href="https://faq-accord-xi.vercel.app">Live Demo</a> 
 </h3>
-
+</div>
 <p>
   A FAQ accordion project from <a href="https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz">Frontend Mentor</a>.
 </p>
